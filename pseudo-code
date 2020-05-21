@@ -1,0 +1,17 @@
+1. click *button to generate password prompts
+
+2. *prompts for password criteria: special char, numbers, upper case, lower case
+
+3. select criteria to include in password (*if statements)
+
+4. *prompt for length of password
+
+5. restrict password length to 8-128 characteres
+
+6. prompt each char type to include in password 
+
+7. validate each char type in password, at least 1 char type should be selected 
+
+8. generate password that matches the selected criteria
+
+9. alert or display the generated password

@@ -9,11 +9,11 @@ function writePassword() {
 
   passwordText.value = password;
 
-  prompt("include upper case letters?");
-  prompt("include lower case letters?");
-  prompt("include special characters?");
-  prompt("include numbers?");
-  prompt("password length? (8-128)");
+  var upper = confirm("include upper case letters?");
+  var lower = confirm("include lower case letters?");
+  var special = confirm("include special characters?");
+  var number = confirm("include numbers?");
+  // confirm("password length? (8-128)");
 
 }
 

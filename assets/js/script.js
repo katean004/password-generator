@@ -62,7 +62,7 @@ if(lower){
 
 // if speical characters are included, go through specialChar array and push into chosen
 if(special){
-  for(var k=0; k < speicalChar.length; k++){
+  for(var k=0; k < specialChar.length; k++){
     chosen.push(specialChar[k]);
   }
 }

@@ -25,13 +25,20 @@ function generatePassword(){
   var number = confirm("include numbers?");
 
 // validating input and ensuring at least one char type is included
-while ((upper===false) && (lower===false) && (special===false) && (number===false)) {
+  while ((upper===false) && (lower===false) && (special===false) && (number===false)) {
   alert("Please choose at least one type of character!");
   var upper = confirm("include upper case letters?");
   var lower = confirm("include lower case letters?");
   var special = confirm("include special characters?");
   var number = confirm("include numbers?");
 }
+
+// prompting user for password length and ensuring length is between 8-128
+  var userLength = prompt("How long would you like your password to be? (8-128)");
+  while ((userLength < 8) || (userLength > 128)){
+    alert("Please choose a length between 8 and 128");
+    prompt("How long would you like your password to be? (8-128)");
+  }
 
 // arrays for each of the password criteria
   var upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];

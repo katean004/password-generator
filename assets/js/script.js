@@ -37,7 +37,7 @@ function generatePassword(){
   var userLength = prompt("How long would you like your password to be? (8-128)");
   while((userLength < 8) || (userLength > 128)){
     alert("Please choose a length between 8 and 128");
-    prompt("How long would you like your password to be? (8-128)");
+    userLength = prompt("How long would you like your password to be? (8-128)");
   }
 
 // arrays for each of the password criteria

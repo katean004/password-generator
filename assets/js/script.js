@@ -74,7 +74,15 @@ if(number){
   }
 }
 
-console.log(chosen.join(""));
+// finalResult variable stores all password criteria included and userLength entered
+// randomize through chosen array for the length of userLength 
+  var finalResult = [];
+  for(m=0; m < userLength; m++){
+    finalResult.push(chosen[Math.floor(Math.random()*chosen.length)]);
+  }
+
+// return finalResult with randomized chars as long as userLength joining array into strings
+  return(finalResult.join(""));
 
 }
 
